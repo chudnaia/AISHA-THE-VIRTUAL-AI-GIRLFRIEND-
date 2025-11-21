@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aisha-telegram-bot
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        value: your_telegram_bot_token_here
+      - key: WEBHOOK_URL
+        value: https://your-app-name.onrender.com
+      - key: GEMINI_API_KEY
+        value: your_gemini_api_key_here
